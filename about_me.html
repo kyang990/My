@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #f8f9fa, #e9ecef);
+      color: #343a40;
+    }
+
+    header {
+      background-color: #343a40;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      min-height: 100vh;
+    }
+
+    .home {
+      text-align: center;
+      background: url('https://images.unsplash.com/photo-1522199710521-72d69614c702') center/cover no-repeat;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .profile-container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 15px;
+      max-width: 400px;
+      margin: 2rem auto;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    .profile-img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      margin-bottom: 1rem;
+      object-fit: cover;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 3px solid #6c757d;
+      display: inline-block;
+      padding-bottom: 0.5rem;
+    }
+
+    .about, .contact, .certificates {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+
+    .about p, .contact p {
+      margin-top: 1rem;
+      line-height: 1.6;
+    }
+
+    .certificates-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .certificates-gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #343a40;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1></h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contacts</a>
+      <a href="#certificates">Certificates</a>
+    </nav>
+  </header>
+
+  <section class="home" id="home">
+    <div class="profile-container">
+      <h2>Hello, I'm Jeanfe Cuerda</h2>
+      <p>A Creative Thinker and a learner </p>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>Hello! I'm Jeanfe Cuerda, a student who loves exploring new things that give lots of knowledge and learnings. I enjoy working on projects that challenge me and will help me grow into a better person.</p>
+    <p>Name: Jeanfe Cuerda <br>Age: 20<br>Gender: Female</></p>
+    
+    </section>
+
+  <section class="contact" id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <p>Email: kyangcuerda@gmail.com</p>
+    <p>Phone: +63 912 335 6789</p>
+    <p>Facebook: <a href="https://facebook.com" target="_blank">facebook.com/Jeanfe Cuerda</a></p>
+  </section>
+
+  <section class="certificates" id="certificates">
+    <h2 class="section-title">Certificates</h2>
+    <div class="certificates-gallery">
+      <img src="certificate1.jpg" alt="Certificate 1">
+      <img src="certificate2.jpg" alt="Certificate 2">
+      <img src="certificate3.jpg" alt="Certificate 3">
+    </div>
+  </section>
+
+  
+  <footer>
+    &copy; 2025 Jeanfe Cuerda. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
